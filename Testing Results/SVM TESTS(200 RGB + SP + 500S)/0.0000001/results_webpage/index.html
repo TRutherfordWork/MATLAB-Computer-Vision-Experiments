@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Nunito:300|Crimson+Text|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  margin: 0px;
+  width: 100%;
+  font-family: 'Crimson Text', serif;
+  background: #fcfcfc;
+}
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 25px 0px 0px 0px;
+  text-transform: lowercase;
+}
+.container {
+  margin: 0px auto 0px auto;
+  width: 1160px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+<center>
+<h1>Computer Vision coursework visualisation</h1>
+<img src="confusion_matrix.png">
+
+<br>
+Accuracy (mean of diagonal of confusion matrix) is 0.659
+<p>
+
+<table border=0 cellpadding=4 cellspacing=1>
+<tr>
+<th>Category name</th>
+<th>Accuracy</th>
+<th colspan=2>Sample training images</th>
+<th colspan=2>Sample true positives</th>
+<th colspan=2>False positives with true label</th>
+<th colspan=2>False negatives with wrong predicted label</th>
+</tr>
+<tr>
+<td>Kitchen</td>
+<td>0.610</td>
+<td bgcolor=LightBlue><img src="thumbnails/Kitchen_sun_acgilwmyulcwzknd.jpg" width=101 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Kitchen_sun_abvefvntluoxopow.jpg" width=113 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Kitchen_sun_abfxpyvmghjuoery.jpg" width=100 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Kitchen_sun_abhfieooonebxjrg.jpg" width=98 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/LivingRoom_sun_adauilhqrogslcnn.jpg" width=75 height=75><br><small>LivingRoom</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Bedroom_sun_achrurwymivlxaqj.jpg" width=75 height=75><br><small>Bedroom</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Kitchen_sun_aavvaxqqsofbaqrz.jpg" width=101 height=75><br><small>Bedroom</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Kitchen_sun_aanpsytlewbiyypw.jpg" width=101 height=75><br><small>LivingRoom</small></td>
+</tr>
+<tr>
+<td>Store</td>
+<td>0.800</td>
+<td bgcolor=LightBlue><img src="thumbnails/Store_sun_adsjzbvonluebmii.jpg" width=57 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Store_sun_adgiqjbmhjyznpgu.jpg" width=113 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Store_sun_ahggldqhbnigmoin.jpg" width=101 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Store_sun_aoqrokdpkdhnyiqe.jpg" width=101 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Street_sun_aqkxuykoiwjqfcof.jpg" width=75 height=75><br><small>Street</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Underwater_sun_afxnmwzkpxfyxkvo.jpg" width=98 height=75><br><small>Underwater</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Store_sun_aoayafrfcnaalpim.jpg" width=75 height=75><br><small>Field</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Store_sun_anpytjankhfmcboa.jpg" width=75 height=75><br><small>Highway</small></td>
+</tr>
+<tr>
+<td>Bedroom</td>
+<td>0.580</td>
+<td bgcolor=LightBlue><img src="thumbnails/Bedroom_sun_aaxquyhljvlbechv.jpg" width=100 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Bedroom_sun_awaepstvivmygdnv.jpg" width=112 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Bedroom_sun_acnvueteextocalx.jpg" width=101 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Bedroom_sun_abrosuajytolzkjt.jpg" width=113 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Kitchen_sun_aaxxjlsuzvqlgylf.jpg" width=113 height=75><br><small>Kitchen</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Kitchen_sun_abpwyqmlzafvklqo.jpg" width=101 height=75><br><small>Kitchen</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Bedroom_sun_acmxkebpuogcvrai.jpg" width=57 height=75><br><small>Kitchen</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Bedroom_sun_abmaqfpmgiwpjyxj.jpg" width=100 height=75><br><small>LivingRoom</small></td>
+</tr>
+<tr>
+<td>LivingRoom</td>
+<td>0.430</td>
+<td bgcolor=LightBlue><img src="thumbnails/LivingRoom_sun_aacnqqydvoqiiqbd.jpg" width=113 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/LivingRoom_sun_abjkqrtcwpbbdkqm.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/LivingRoom_sun_abmhxsodaptaogbq.jpg" width=110 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/LivingRoom_sun_acswhqyzyuwhdbog.jpg" width=113 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Field_sun_ahsyjvktentonshi.jpg" width=75 height=75><br><small>Field</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Kitchen_sun_aaedkdzalmgthmau.jpg" width=75 height=75><br><small>Kitchen</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/LivingRoom_sun_aceqhbugfutufqee.jpg" width=75 height=75><br><small>TallBuilding</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/LivingRoom_sun_acxzrwenixbhhmhr.jpg" width=113 height=75><br><small>Bedroom</small></td>
+</tr>
+<tr>
+<td>House</td>
+<td>0.660</td>
+<td bgcolor=LightBlue><img src="thumbnails/House_sun_abjslfjjcbqvvskn.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/House_sun_alehoecobeqbicmb.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/House_sun_bakhldepajyducxp.jpg" width=101 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/House_sun_awvfftwqwfbjqmmu.jpg" width=99 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Highway_sun_aenpdrmxtsssrktn.jpg" width=111 height=75><br><small>Highway</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Store_sun_akacfsuooairfzxq.jpg" width=101 height=75><br><small>Store</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/House_sun_apazovprdnteupiw.jpg" width=100 height=75><br><small>Bedroom</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/House_sun_awyiuqdptibtzfuh.jpg" width=75 height=75><br><small>Stadium</small></td>
+</tr>
+<tr>
+<td>Industrial</td>
+<td>0.630</td>
+<td bgcolor=LightBlue><img src="thumbnails/Industrial_sun_ayongkltqodtuzyd.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Industrial_sun_azqxodvvugzlbrff.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Industrial_sun_aqidnfzjezlwjpji.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Industrial_sun_aewerincsdkjkjsw.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/TallBuilding_sun_aclhiyfwibcvlkae.jpg" width=75 height=75><br><small>TallBuilding</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Coast_sun_adbdqsmadegqdglp.jpg" width=105 height=75><br><small>Coast</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Industrial_sun_ahvoptfjirvbznja.jpg" width=50 height=75><br><small>Street</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Industrial_sun_augojkxjhlaslgwe.jpg" width=115 height=75><br><small>TallBuilding</small></td>
+</tr>
+<tr>
+<td>Stadium</td>
+<td>0.650</td>
+<td bgcolor=LightBlue><img src="thumbnails/Stadium_sun_bmhvmfspirmufbdq.jpg" width=113 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Stadium_sun_bablivmzjoixtjii.jpg" width=101 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Stadium_sun_acagfzqcmmiquvog.jpg" width=113 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Stadium_sun_aliwekqtpmatjrfk.jpg" width=101 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Industrial_sun_awzgopwthsstuawg.jpg" width=101 height=75><br><small>Industrial</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Highway_sun_aelpgdpjevtjgyfv.jpg" width=113 height=75><br><small>Highway</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Stadium_sun_agzdhimeegxkrfwt.jpg" width=57 height=75><br><small>Street</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Stadium_sun_aknalfrcvfyyawjc.jpg" width=53 height=75><br><small>Store</small></td>
+</tr>
+<tr>
+<td>Underwater</td>
+<td>0.880</td>
+<td bgcolor=LightBlue><img src="thumbnails/Underwater_sun_avsiadqerdidihjg.jpg" width=53 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Underwater_sun_aoqdewrauegewohm.jpg" width=88 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Underwater_sun_aalvvifbfqogovsr.jpg" width=134 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Underwater_sun_aeoukrxgtybudeiw.jpg" width=101 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Mountain_sun_apnkwajmjhymujhm.jpg" width=75 height=75><br><small>Mountain</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Store_sun_aofnermpqchzyqom.jpg" width=100 height=75><br><small>Store</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Underwater_sun_ahdxurulllcopwhb.jpg" width=75 height=75><br><small>Field</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Underwater_sun_ainjbonxmervsvpv.jpg" width=101 height=75><br><small>Store</small></td>
+</tr>
+<tr>
+<td>TallBuilding</td>
+<td>0.680</td>
+<td bgcolor=LightBlue><img src="thumbnails/TallBuilding_sun_alwzxnwwrrmiupff.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/TallBuilding_sun_apcaipiwztcbzocn.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/TallBuilding_sun_actpjkbxflyeondq.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/TallBuilding_sun_adxauasbnyieytgh.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Store_sun_aqjwciodhwilnihu.jpg" width=101 height=75><br><small>Store</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Bedroom_sun_abrpngeroqjzkgkm.jpg" width=114 height=75><br><small>Bedroom</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/TallBuilding_sun_afnrpcyqutbezqqa.jpg" width=75 height=75><br><small>Industrial</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/TallBuilding_sun_abhxhztnbhldtgkg.jpg" width=50 height=75><br><small>Bedroom</small></td>
+</tr>
+<tr>
+<td>Street</td>
+<td>0.830</td>
+<td bgcolor=LightBlue><img src="thumbnails/Street_sun_abhjteqstcfyacpq.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Street_sun_acpsdqctxkqfmffc.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Street_sun_ariqpnhklfueaazy.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Street_sun_avystghndyicztsb.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Highway_sun_afpvbqxlxqbtpxrv.jpg" width=75 height=75><br><small>Highway</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/House_sun_aybhlynwntmpeycy.jpg" width=75 height=75><br><small>House</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Street_sun_atbxgzscohlejijl.jpg" width=75 height=75><br><small>House</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Street_sun_assdzealxlyzzzyy.jpg" width=101 height=75><br><small>Highway</small></td>
+</tr>
+<tr>
+<td>Highway</td>
+<td>0.600</td>
+<td bgcolor=LightBlue><img src="thumbnails/Highway_sun_aiwkvghjxwfkiwuy.jpg" width=111 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Highway_sun_afsiwyxkqzjqptpd.jpg" width=101 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Highway_sun_abdyuhapzpygeqfw.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Highway_sun_abjrlpjcricwloej.jpg" width=104 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Street_sun_auoxmlcpuxowrodf.jpg" width=75 height=75><br><small>Street</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/TallBuilding_sun_afzohwwzfnecpbpo.jpg" width=75 height=75><br><small>TallBuilding</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Highway_sun_adjuuzdgvyfjpjll.jpg" width=117 height=75><br><small>Industrial</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Highway_sun_advstbacygihnsur.jpg" width=113 height=75><br><small>Stadium</small></td>
+</tr>
+<tr>
+<td>Field</td>
+<td>0.650</td>
+<td bgcolor=LightBlue><img src="thumbnails/Field_sun_aaetebtkjxzlugai.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Field_sun_aaficjpvcqagdksb.jpg" width=101 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Field_sun_ajxwzlfsqvjdvhkh.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Field_sun_ahnxesgzpjawzhas.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Mountain_sun_aciebeapldilzbug.jpg" width=75 height=75><br><small>Mountain</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Coast_sun_abxzpoxzshixiiap.jpg" width=75 height=75><br><small>Coast</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Field_sun_ajxlfhgsiedekubj.jpg" width=50 height=75><br><small>Bedroom</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Field_sun_ajphszytbenkwbti.jpg" width=75 height=75><br><small>Forest</small></td>
+</tr>
+<tr>
+<td>Coast</td>
+<td>0.510</td>
+<td bgcolor=LightBlue><img src="thumbnails/Coast_sun_agqotwaexbhbdoat.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Coast_sun_ajnqydhyfjvafmqi.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Coast_sun_afhdyfqhkvvsxlbl.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Coast_sun_aaztylxoafrsgjby.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Highway_sun_acdcynrrzcbddrcj.jpg" width=75 height=75><br><small>Highway</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Field_sun_ahiosdudmxevwdlc.jpg" width=75 height=75><br><small>Field</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Coast_sun_aajidnscfsayawcf.jpg" width=113 height=75><br><small>Stadium</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Coast_sun_actzmjckdcrftetj.jpg" width=101 height=75><br><small>Mountain</small></td>
+</tr>
+<tr>
+<td>Mountain</td>
+<td>0.620</td>
+<td bgcolor=LightBlue><img src="thumbnails/Mountain_sun_azbkhlxvemsutndd.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Mountain_sun_auupiaadrlsjswnx.jpg" width=51 height=76></td>
+<td bgcolor=LightGreen><img src="thumbnails/Mountain_sun_alyzcvlmsfovtrse.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Mountain_sun_ahgrgfciupcttxug.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Field_sun_ahbqnxyvfjyixmhi.jpg" width=75 height=75><br><small>Field</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Stadium_sun_apgnhkgldbcjgogu.jpg" width=114 height=75><br><small>Stadium</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Mountain_sun_ahmajnuemkwwrubr.jpg" width=101 height=75><br><small>Highway</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Mountain_sun_agvastrefugkefza.jpg" width=75 height=75><br><small>TallBuilding</small></td>
+</tr>
+<tr>
+<td>Forest</td>
+<td>0.760</td>
+<td bgcolor=LightBlue><img src="thumbnails/Forest_sun_afxbfgxrtlczpwyn.jpg" width=75 height=75></td>
+<td bgcolor=LightBlue><img src="thumbnails/Forest_sun_acxtlssrlfsryvac.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Forest_sun_antwgrnlkmlyvnjx.jpg" width=75 height=75></td>
+<td bgcolor=LightGreen><img src="thumbnails/Forest_sun_aophufmlvutouqju.jpg" width=75 height=75></td>
+<td bgcolor=LightCoral><img src="thumbnails/Underwater_sun_aflhnjdlhtgzcykt.jpg" width=57 height=75><br><small>Underwater</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/Underwater_sun_adtdilppcnubbcly.jpg" width=75 height=75><br><small>Underwater</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Forest_sun_almbnfrklwqeecfz.jpg" width=75 height=75><br><small>Field</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/Forest_sun_apswbydmjvgdlbna.jpg" width=75 height=75><br><small>Underwater</small></td>
+</tr>
+<tr>
+<th>Category name</th>
+<th>Accuracy</th>
+<th colspan=2>Sample training images</th>
+<th colspan=2>Sample true positives</th>
+<th colspan=2>False positives with true label</th>
+<th colspan=2>False negatives with wrong predicted label</th>
+</tr>
+</table>
+</center>
+
+
+</div>
+</body>
+</html>
